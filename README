@@ -1,0 +1,87 @@
+ Project: Homework2 Data Structures
+ Name: OLTEAN ANDREEA-DIANA
+ Group: 314CD
+ 
+    Functions used:
+
+AVLTree
+
+createTree  ------> Initialises a new tree and the functions that are going to 
+                    be used.
+                   
+createTreeNode  ------> Creates a new node with the given information and
+                        initialises the links.
+                        
+destroyTreeNode ------> Frees the information and the memory of a given 
+                        node.
+                        
+isEmpty ------> Checks if a given tree is empty or not.
+
+search  ------> Searches for a node that has a specific element.
+
+minimum ------> Returns the minimum node of a tree that is the furthest on the
+                left.
+
+maximum ------> Returns the maximum node of a tree that is the furthest on the
+                right.
+
+successor ------> Returns the successor of a node.
+
+predecessor ------> Returns the predecessor of a node.
+
+max ------> Returns the maximum between two integers.
+
+avlRotateLeft ------> Rotates the tree to the left and updates the links and 
+                      heights of the changed nodes.
+                      
+avlRotateRight  ------> Rotates the tree to the right and updates the links and
+                        heights of the changed nodes.     
+                        
+avlGetBalance ------> Gets the balance of a given node as the difference bewteen
+                      the left and the right subtree.
+                      
+avlFixUp  ------> Rotates the tree if there are any unbalanced nodes.
+
+refreshHeights  ------> Updates the heights of the nodes if there were any
+                        changes caused by insertion.
+                        
+insert  ------> Inserts a node with a given info and elem in the right place and
+                changes the links each time so that the lists point to the 
+                successor and predecessor of the node.
+                
+change  ------> Erases the link between a parent and a node and updates the
+                height of the parent.
+                
+deleteLeaf  ------> Erases a leaf from a tree by changing the links, the parent,
+                    the heights and keeping the tree balanced.
+                    
+deleteSplitNode ------> Erases a node from a tree by changing the links,
+                        the parent, the heights and keeping the tree balanced. A
+                        particularity is represented by the fact that the node 
+                        is replaced with its successor.
+                        
+deleteOneChildNode  ------> Erases a node from a tree that has a single child.
+                            It is also replaced by his child, and the links and
+                            heights are updated.
+                            
+delete  ------> Removes a certain element from the tree using the functions
+                above. If a node has duplicates, the last duplicate is erased. 
+                
+destroyTree ------> Frees the memory of a given tree.
+
+Tema2
+
+buildTreeFromFile ------> Inserts the strings from a file in a tree, using the
+                          created index and value.
+                          
+find  ------> Searches in the tree for words that start with the given string
+              and saves the indexes in an arrey that will help print the values.
+              
+singleKeyRangeQuery ------> Forms an array of indexes of the words that start
+                            with the given key.
+                            
+findInt ------> Searches i the tree for words that are located between the given
+                keys q, p and forms an array of indexes.
+                
+multiKeyRangeQuery  ------> Creates an array of indexes of the strings that are
+                            situated between the given keys q and p.
